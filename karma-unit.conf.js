@@ -3,6 +3,11 @@ module.exports=function(config){
     framework:['jasmine'],
     browsers:["Firefox"],
     files:[
+      "node_modules/angular/angular.min.js",
+      "node_modules/angular-route/angular-route.min.js",
+      "node_modules/angular-mocks/angular-mocks.js",
+      'app/scripts/app.js',
+      'app/scripts/controllers/selectpizzacontroller.js',
       'spec/unit/*.js'
     ]
   });

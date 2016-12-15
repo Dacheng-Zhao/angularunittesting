@@ -1,0 +1,10 @@
+angular.module('pizzastore',["ngRoute"])
+  .config(function($routeProvider){
+      $routeProvider.when("/",{
+        templateUrl:"views/selectpizza.html",
+        controller:"selectpizzacontroller"
+      })
+      .otherwise({
+        redirectTo:'/'
+      })
+  });

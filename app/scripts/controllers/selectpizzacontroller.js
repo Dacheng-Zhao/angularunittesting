@@ -1,0 +1,11 @@
+angular.module('pizzastore').controller('selectpizzacontroller',function($scope){
+  $scope.choices=['canadian','vegetarian','pepperoni'];
+  $scope.pizzatype='';
+  $scope.orderinprogress=false;
+  $scope.placeorder=function(){
+    $scope.orderinprogress=false;
+    if($scope.pizzatype!==''){
+      $scope.orderinprogress=true;
+    }
+  }
+})
